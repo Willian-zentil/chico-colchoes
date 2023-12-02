@@ -1,0 +1,27 @@
+.orcamento {
+    margin-top: 95px;
+}
+
+.orcamento h3 {
+    font-size: 40px;
+}
+
+.orcamento a {
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.orcamento img {
+    margin-top: 95px;
+    max-width: 100%;
+    width: 100%;
+}
+
+@media(max-width: 992px) {
+    .orcamento {
+        margin-top: 40px;
+    }
+    .orcamento img {
+        margin-top: 40px;
+    }
+}

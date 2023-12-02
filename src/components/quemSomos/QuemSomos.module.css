@@ -1,0 +1,29 @@
+.imgQuemSomos {
+    max-width: 600px;
+}
+
+.quemSomos section {
+    display: flex;
+    justify-content: center;
+}
+
+.quemSomos section div {
+    max-width: 400px;
+    padding-left: 40px;
+}
+
+.quemSomos p {
+    text-align: start;
+}
+
+.quemSomos h3 {
+    margin-top: 0;
+    text-align: start;
+    font-size: 32px;
+}
+
+@media(max-width: 992px) {
+    .quemSomos section {
+        flex-direction: column;
+    }
+}

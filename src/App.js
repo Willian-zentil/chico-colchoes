@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Topbar from './components/topbar/Topbar';
+import Header from './components/header/Header';
+import Fullbanner from './components/fullbanner/Fullbanner';
+import Servicos from './components/servicos/Servicos';
+import QuemSomos from './components/quemSomos/QuemSomos';
+import Orcamento from './components/orcamento/Orcamento';
+import Footer from './components/footer/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Topbar />
+      <Header />
+      <Fullbanner />
+      <Servicos />
+      <QuemSomos />
+      <Orcamento />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,9 @@
+.buttoncall {
+    background-color: #00D98B;
+    color: #fff!important;
+    padding: 9px 20px;
+}
+
+.buttoncall:hover {
+    scale: 1.2;
+}
