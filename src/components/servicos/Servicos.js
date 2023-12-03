@@ -36,7 +36,7 @@ function Servicos() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a justo nec tellus tempus dictum. Nam imperdiet a lacus nec tincidunt</p>
             </div>
         </ContainerSmall>
-        <h3>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</h3>
+        <h3>Um bom colchão terapêutico transforma seu sono em bem-estar.</h3>
     </section>
   )
 }

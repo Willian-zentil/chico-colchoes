@@ -8,7 +8,7 @@ import ContainerSmall from '../atons/container/ContainerSmall'
 
 function Header() {
 
-  const showSettings  = (e) => {
+  const showSettings = (e) => {
     e.preventDefault()
   }
 
@@ -20,11 +20,13 @@ function Header() {
           <img className={styles.logo} src={logo} alt='logo' />
         </div>
         <div className={styles.hamburguerMenu}>
-          <Menu right width={'100%'}>
-            <a id="home" className="menu-item" href="/">Nossos serviços</a>
-            <a id="about" className="menu-item" href="/about">Quem somos</a>
-            <a onClick={showSettings } className="menu-item--small" href="">Settings</a>
-          </Menu>
+          {window.innerWidth < 992 &&
+            <Menu right width={'100%'}>
+              <a id="home" className="menu-item" href="/">Nossos serviços</a>
+              <a id="about" className="menu-item" href="/about">Quem somos</a>
+              <a onClick={showSettings} className="menu-item--small" href="">Settings</a>
+            </Menu>
+          }
         </div>
         <div className={styles.btnGroup}>
           <a href='#'>Nossos serviços</a>

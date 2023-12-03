@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Fullbanner.module.css'
 
-import fullbanner from '../../images/Disney-2-1.webp'
+import fullbanner from '../../images/Blue Dark Professional Geometric Business Project Presentation  (1).png'
 
 function Fullbanner() {
   return (
