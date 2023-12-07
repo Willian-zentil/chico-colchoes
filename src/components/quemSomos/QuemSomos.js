@@ -5,16 +5,16 @@ import ContainerSmall from '../atons/container/ContainerSmall'
 
 function QuemSomos() {
     return (
-        <section className={styles.quemSomos}>
+        <section id={'infinity'} className={styles.quemSomos}>
             <ContainerSmall>
-                <img className={styles.imgQuemSomos} src={banner} alt='imagem quem somos' />
+                <img className={styles.imgQuemSomos} src={banner} alt='imagem linha infinity conchões' />
                 <div>
                     <h3>Linha Infinity</h3>
-                    <p>– Magnético</p>
+                    <p> – Magnético</p>
 
                     <p>  – Infra vermelho Longo</p>
 
-                    <p> – Densidade Progressiva</p>
+                    <p>  – Densidade Progressiva</p>
 
                     <p>  – Camada Soft Extra conforto</p>
 

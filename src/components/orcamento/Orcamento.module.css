@@ -17,6 +17,11 @@
     width: 100%;
 }
 
+.orcamento video {
+    margin-top: 40px;
+    max-width: 100%;
+}
+
 @media(max-width: 992px) {
     .orcamento {
         margin-top: 40px;

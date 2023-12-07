@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Header.module.css'
 import { slide as Menu } from 'react-burger-menu'
 
@@ -8,10 +8,11 @@ import ContainerSmall from '../atons/container/ContainerSmall'
 
 function Header() {
 
-  const showSettings = (e) => {
-    e.preventDefault()
-  }
+  const [menuOpen, setmenuOpen] = useState()
 
+  const closeMenu = (e) => {
+    setmenuOpen(false)
+  }
 
   return (
     <header className={styles.header}>
@@ -21,17 +22,17 @@ function Header() {
         </div>
         <div className={styles.hamburguerMenu}>
           {window.innerWidth < 992 &&
-            <Menu right width={'100%'}>
-              <a id="home" className="menu-item" href="/">Nossos serviços</a>
-              <a id="about" className="menu-item" href="/about">Quem somos</a>
-              <a onClick={showSettings} className="menu-item--small" href="">Settings</a>
+            <Menu right width={'100%'} isOpen={menuOpen}>
+              <a id="home" className="menu-item" href="#servicos" onClick={closeMenu}>Nossos serviços</a>
+              <a id="about" className="menu-item" href="#infinity" onClick={closeMenu}>Produtos</a>
+              <a className="menu-item--small" href='https://wa.me/5514996272743' target='_blank' onClick={closeMenu}>Fale Conosco</a>
             </Menu>
           }
         </div>
         <div className={styles.btnGroup}>
-          <a href='#'>Nossos serviços</a>
-          <a href='#'>Quem somos</a>
-          <Buttoncall text="FALE CONOSCO" href={'#'} />
+          <a href='#servicos'>Nossos serviços</a>
+          <a href='#infinity'>Produtos</a>
+          <Buttoncall text="FALE CONOSCO" href={'https://wa.me/5514996272743'} />
         </div>
       </ContainerSmall>
     </header>

@@ -13,6 +13,11 @@
   }
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   min-height: 100vh;
 }
@@ -60,8 +65,17 @@ Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
 .bm-menu-wrap {
-  top: 133px;
+  top: 158px;
   height: 110px!important;
+}
+
+.bm-menu {
+  height: 170px!important;
+}
+
+.bm-item.menu-item--small {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* General sidebar styles */
@@ -83,6 +97,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: #b8b7ad;
   padding: 0.8em;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -90,6 +105,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: #fff;
   text-decoration: none;
   margin: 4px;
+  width: 100%;
 }
 
 /* Individual item */

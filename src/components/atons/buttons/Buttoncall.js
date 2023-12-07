@@ -3,7 +3,7 @@ import styles from './Buttoncall.module.css'
 
 function Buttoncall(props) {
   return (
-    <a className={styles.buttoncall} href={props.href}>{props.text}</a>
+    <a className={styles.buttoncall} href={props.href} target='_blank'>{props.text}</a>
   )
 }
 

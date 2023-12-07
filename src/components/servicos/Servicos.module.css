@@ -15,6 +15,7 @@
 
 .servicos p {
     font-size: 16px;
+    text-align: center;
 }
 
 .servicos section{
@@ -27,7 +28,9 @@
 }
 
 .servico img {
-    max-width: 100px;
+    max-width: 193px;
+    border-radius: 260px;
+    height: 95%;
 }
 
 .servico:hover .containerImg{
@@ -54,7 +57,7 @@
         margin-bottom: 30px;
     }
     .servico img {
-        max-width: 80px;
+        max-width: 135px
     }
     .containerImg {
         max-width: 140px;
