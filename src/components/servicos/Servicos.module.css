@@ -31,6 +31,7 @@
     max-width: 193px;
     border-radius: 260px;
     height: 95%;
+    width: 100%;
 }
 
 .servico:hover .containerImg{
